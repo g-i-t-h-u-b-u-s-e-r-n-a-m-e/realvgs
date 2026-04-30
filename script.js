@@ -1,4 +1,4 @@
-function link(){
+function login(){
     if (document.getElementById("username").value.includes("http://") || document.getElementById("username").value.includes("https://")){
         document.querySelector("a").href = document.getElementById("username").value
     } else {
