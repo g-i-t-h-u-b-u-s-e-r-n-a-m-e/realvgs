@@ -1,10 +1,7 @@
 function link(){
-    if (1 == 2){
-        
+    if (document.getElementById("username").value.includes("http://") || document.getElementById("username").value.includes("https://")){
+        document.querySelector("a").href = document.getElementById("username").value
     } else {
         alert("Incorrect username/password, please try again")
     }
-}
-function enlist(){
-    alert("You joined our mailing list, thanks for signing up!")
 }
